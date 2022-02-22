@@ -11,8 +11,8 @@ from telegram import (
 )
 from DarlingRobot import dispatcher, pbot
 from pyrogram import filters
-from SiestaRobot.modules.disable import DisableAbleCommandHandler
-from SiestaRobot.modules.language import gs
+from DarlingRobot.modules.disable import DisableAbleCommandHandler
+from DarlingRobot.modules.language import gs
 
 
 def helps(chat):
