@@ -4,7 +4,7 @@ from telegram.ext.filters import Filters
 from telegram import Update, message, ParseMode
 from telegram.ext import CallbackContext
 
-from DarlingRobot.modules.helper_funcs.decorators import siestacmd, siestamsg
+from DarlingRobot.modules.helper_funcs.decorators import darlingcmd, darlingmsg
 from DarlingRobot.modules.helper_funcs.channel_mode import user_admin, AdminPerms
 from DarlingRobot.modules.sql.antichannel_sql import antichannel_status, disable_antichannel, enable_antichannel
 from DarlingRobot.modules.language import gs
