@@ -145,7 +145,7 @@ def bot(**args):
     return decorator
 
 
-def SiestaRobot(**args):
+def DarlingRobot(**args):
     pattern = args.get("pattern", None)
     disable_edited = args.get("disable_edited", False)
     ignore_unsafe = args.get("ignore_unsafe", False)
