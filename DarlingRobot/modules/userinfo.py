@@ -475,7 +475,7 @@ def stats(update, context):
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
             + f"\n\n✦ [✘ Support ✘](https://t.me/ZeroTwoXSupport) | ✦ [Updates](https://t.me/ZeroTwoXUpdates)\n\n"
-            + "╘══✘ Owned By [♡](https://t.me/X_Hate) | [✘ Senpai ✘](https://t.me/uppermoonx1) |×|\n",
+            + "╘══[✘ Darling ✘](https://t.me/X_Hate) | [✘ Senpai ✘](https://t.me/uppermoonx1) |×|\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
