@@ -395,7 +395,7 @@ def darling_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "siesta_back":
+    elif query.data == "darling_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -444,7 +444,7 @@ def darling_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="darling_"),
                     ]
                 ]
             ),
