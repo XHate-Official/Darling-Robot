@@ -368,10 +368,10 @@ def help_button(update, context):
         pass
 
 
-def siesta_about_callback(update, context):
+def darling_about_callback(update, context):
     query = update.callback_query
     chat = update.effective_chat
-    if query.data == "siesta_":
+    if query.data == "darling_":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_text"),
             parse_mode=ParseMode.MARKDOWN,
