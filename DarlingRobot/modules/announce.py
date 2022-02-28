@@ -11,7 +11,7 @@ import DarlingRobot.modules.sql.logger_sql as sql
 from DarlingRobot.modules.helper_funcs.anonymous import user_admin as u_admin, AdminPerms
 
 
-@mikucmd(command="announce", pass_args=True)
+@darlingcmd(command="announce", pass_args=True)
 @u_admin(AdminPerms.CAN_CHANGE_INFO)
 @loggable
 def announcestat(update: Update, context: CallbackContext) -> str:
