@@ -7,7 +7,7 @@ from telegram.inline.inlinekeyboardbutton import InlineKeyboardButton
 from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 
 from DarlingRobot import DEV_USERS, DRAGONS, dispatcher
-from DarlingRobot.modules.helper_funcs.decorators import Darlingcallback
+from DarlingRobot.modules.helper_funcs.decorators import darlingcallback
 
 
 class AdminPerms(Enum):
