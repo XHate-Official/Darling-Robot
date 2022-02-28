@@ -5,7 +5,7 @@ from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
 
 from DarlingRobot.modules.log_channel import loggable
-from DarlingRobot.modules.helper_funcs.decorators import mikucmd
+from DarlingRobot.modules.helper_funcs.decorators import darlingcmd
 
 import DarlingRobot.modules.sql.logger_sql as sql
 from DarlingRobot.modules.helper_funcs.anonymous import user_admin as u_admin, AdminPerms
