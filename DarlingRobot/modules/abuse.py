@@ -2,7 +2,7 @@ import random
 from telegram.ext import run_async, Filters
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from DarlingRobot import dispatcher
-from DarlingRobot.modules.disable import DisableAbleCommandHandler
+from DarlingRobot.modules.disable import CommandHandler
 
 SFW_STRINGS = (
     "shut up dickhead",
@@ -58,6 +58,6 @@ def dark(bot: Bot, update: Update):
 
 __mod_name__ = "Abuse"
 
-DARK_HANDLER = DisableAbleCommandHandler("dark", dark)
+DARK_HANDLER = CommandHandler("dark", dark)
 
 dispatcher.add_handler(DARK_HANDLER)
