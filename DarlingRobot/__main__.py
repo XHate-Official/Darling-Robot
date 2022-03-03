@@ -213,6 +213,12 @@ def start(update: Update, context: CallbackContext):
                             InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
                         ],
                         [
+                            InlineKeyboardButton(text=gs(chat.id, "࿇ My Owner ࿇"), url="t.me/x_hate"),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id. "• Anime Chats •"), url="t.me/AnymeXLovers"),
+                        ],    
+                        [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "about_button"), callback_data="darling_"),
                         ]
