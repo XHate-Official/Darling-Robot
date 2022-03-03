@@ -1,8 +1,8 @@
 import random
 from telegram.ext import run_async, Filters
 from telegram import Message, Chat, Update, Bot, MessageEntity
-from tg_bot import dispatcher
-from tg_bot.modules.disable import DisableAbleCommandHandler
+from DarlingRobot import dispatcher
+from DarlingRobot.modules.disable import DisableAbleCommandHandler
 
 SFW_STRINGS = (
     "shut up dickhead",
