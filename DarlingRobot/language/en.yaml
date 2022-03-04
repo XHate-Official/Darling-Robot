@@ -74,7 +74,7 @@ pm_help_module_text: "Here is the help for the *{}* module :\n\n"
 group_help_text: "Contact me in PM to get the list of possible commands."
 group_help_modules_text: "Contact me in PM to get help of *{}*"
 # Group Help Button
-group_help_button: "✘ Help ✘"
+group_help_button: "✘ ʜᴇʟᴘ ✘"
 # PM Settings
 pm_settings_personal_text: "These are your current settings: "
 pm_settings_group_text: "Which module would you like to check {}'s settings for?"
@@ -84,18 +84,18 @@ pm_settings_groupss_text: |
 # Group Settings Text
 group_settings_text: "Click here to get this chat's settings, as well as yours."
 # Group Settings Button
-group_settings_button: "✘ Settings ✘"
+group_settings_button: "✘ ʜᴇʟᴘ ✘"
 
 # PM Button
-add_bot_to_group_button: "✘ Take Me To Your Group ✘"
-support_chat_link_button: "✘ Support ✘"
-updates_channel_link_button: "✘ Update ✘"
-notes_button: "✘ Notes ✘"
-source_button: "✘ Source Code ✘"
-help_button: "✘ Get Help ✘"
-back_button: "➻ Go back"
-about_button: "✘ About Zero Two ✘"
-inline_button: "✦ Try inline! ✦​​"
+add_bot_to_group_button: "✘ sʜᴏᴡ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✘"
+support_chat_link_button: "✘ sᴜᴘᴘᴏʀᴛ ✘"
+updates_channel_link_button: "✘ ᴜᴘᴅᴀᴛᴇ ✘"
+notes_button: "✘ ɴᴏᴛᴇs ✘"
+source_button: "✘ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ✘"
+help_button: "✘ ɢᴇᴛ ʜᴇʟᴘ ✘"
+back_button: "ɢᴏ ʙᴀᴄᴋ"
+about_button: "✘ ᴀʙᴏᴜᴛ ᴢᴇʀᴏ ᴛᴡᴏ ✘"
+inline_button: "✘ ᴛʀʏ ɪɴʟɪɴᴇ! ✘​​"
 
 # MODULES
 admin_help: |
