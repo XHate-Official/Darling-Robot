@@ -19,11 +19,9 @@ pm_start_text: |
   *• ᴄʜᴇᴄᴋ ᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʜᴇʟᴘ*
  
 group_start_text: |
-  ╔══════《✧》══════╗
-   *♡ Hi There, I'm Zero Two!*
-  
-   *×͜× Actived since :* `{}`[✨](https://telegra.ph/file/eab90db9a1090626b1b5c.jpg)
-  ╚══════《✧》══════╝
+  *ʜᴏɪ ʜᴏɪ, ɪ'ᴍ ʜᴇʀᴇ....ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ!*
+
+  *๏ ᴀʟɪᴠᴇ sɪɴᴄᴇ :* {} [🌸](https://telegra.ph/file/c6b06fc802033e27e077c.mp4)
 
 pm_about_text: |
   ✧ Hey Babes I'm *Zero Two*, a powerful group management bot built to help you manage your group easily. ✧
@@ -96,6 +94,7 @@ help_button: "✘ ɢᴇᴛ ʜᴇʟᴘ ✘"
 back_button: "ɢᴏ ʙᴀᴄᴋ"
 about_button: "✘ ᴀʙᴏᴜᴛ ᴢᴇʀᴏ ᴛᴡᴏ ✘"
 inline_button: "✘ ᴛʀʏ ɪɴʟɪɴᴇ! ✘​​"
+owner_button: "࿇ ᴅᴀʀʟɪɴɢ ࿇"
 
 # MODULES
 admin_help: |
