@@ -569,8 +569,8 @@ GBAM_REASON = (
     "sasta white-het hekur",
     "sasta white-het codur",
     "sasta white-het vala chintu",
-    "sasta hexa hekur",
-    "sasta hexa playur",
+    "sasta remdi hekur",
+    "sasta ludo playur",
     "sasta tiktokur💃🏾",
     "sasta membor of team 7",
     "sasta selmon boi",
@@ -583,6 +583,7 @@ GBAM_REASON = (
     "sasti ria chokroborti",
     "sasti nibbi",
     "sasta camper",
+    "sasta chumtiya",
 )
 
 
