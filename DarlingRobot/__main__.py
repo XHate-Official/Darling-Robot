@@ -225,8 +225,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_text(
             text=gs(chat.id, "group_start_text").format(
-                escape_markdown(uptime),
-                ),  
+                escape_markdown(uptime)),          
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     [
