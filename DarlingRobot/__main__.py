@@ -225,9 +225,11 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_text(
             text=gs(chat.id, "group_start_text").format(
-                escape_markdown(uptime),          
-                parse_mode=ParseMode.MARKDOWN
+                escape_markdown(uptime),
                 ),
+                parse_mode=ParseMode.MARKDOWN
+        )
+        
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
     # Log the error before we do anything else, so we can see it even if something breaks.
