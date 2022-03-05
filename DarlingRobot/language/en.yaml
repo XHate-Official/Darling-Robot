@@ -16,7 +16,7 @@ pm_start_text: |
     × *ᴀʟɪᴠᴇ sɪɴᴄᴇ :* {}
     × {} *ᴍʏ ғʀɪᴇɴᴅs, ᴀᴄʀᴏss* {} *ᴄʜᴀᴛs.*
    ┗━━━━━━━:*¨ ✘♚✘ ¨*:━━━━━━━┛
-  *• ᴄʜᴇᴄᴋ ᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʜᴇʟᴘ*
+  *• ᴄʜᴇᴄᴋ ᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ʙʏ ᴄʟɪᴄᴋɪɴɢ* /help
  
 group_start_text: |
   *ʜᴏɪ ʜᴏɪ, ɪ'ᴍ ʜᴇʀᴇ....ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ!*
@@ -90,7 +90,7 @@ support_chat_link_button: "✘ sᴜᴘᴘᴏʀᴛ ✘"
 updates_channel_link_button: "✘ ᴜᴘᴅᴀᴛᴇ ✘"
 notes_button: "✘ ɴᴏᴛᴇs ✘"
 source_button: "✘ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ✘"
-darlinghelp_button: "✘ ɢᴇᴛ ʜᴇʟᴘ ✘"
+help_button: "✘ ɢᴇᴛ ʜᴇʟᴘ ✘"
 back_button: "ɢᴏ ʙᴀᴄᴋ"
 about_button: "✘ ᴀʙᴏᴜᴛ ᴢᴇʀᴏ ᴛᴡᴏ ✘"
 inline_button: "✘ ᴛʀʏ ɪɴʟɪɴᴇ! ✘​​"
