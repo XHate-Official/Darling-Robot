@@ -226,6 +226,16 @@ def start(update: Update, context: CallbackContext):
         update.effective_message.reply_text(
             text=gs(chat.id, "group_start_text").format(
                 escape_markdown(uptime),
+                InlineKeyboardMarkup(
+                    [
+                        [
+                            Inlinekeyboardbutton(text=gs(chat.id, "support_chat_link_button"), url="t.me/zerotwoxsupport"),
+                        ],
+                        [
+                            Inlinekeyboardbutton(text=gs(chat.id,"owner_button"), url="t.me/x_hate"),
+                        ]
+                    ]  
+                           
                 ),
             parse_mode=ParseMode.MARKDOWN
        )
