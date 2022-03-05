@@ -232,7 +232,7 @@ def start(update: Update, context: CallbackContext):
                             Inlinekeyboardbutton(text=gs(chat.id, "support_chat_link_button"), url="t.me/zerotwoxsupport"),
                         ],
                         [
-                            Inlinekeyboardbutton(text=gs(chat.id,"owner_button"), url="t.me/x_hate"),
+                            Inlinekeyboardbutton(text=gs(chat.id, "owner_button"), url="t.me/x_hate"),
                         ]
                     ]  
                            
