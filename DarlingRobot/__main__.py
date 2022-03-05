@@ -209,7 +209,7 @@ def start(update: Update, context: CallbackContext):
                             InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/ZeroXDarlingbot?startgroup=new"),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "darlinghelp_button"), callback_data="darlinghelp_back"),
+                            InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
                             InlineKeyboardButton(text=gs(chat.id, "owner_button"), url="t.me/x_hate"),
                         ],
                         [
