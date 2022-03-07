@@ -1,17 +1,10 @@
-FROM debian:11
-FROM python:3.10.1-slim-buster
+FROM debian:latest
 
-WORKDIR /DarlingRobot/
-
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get -y install git
-RUN python3.9 -m pip install -U pip
-RUN apt-get install -y wget python3-pip curl bash neofetch ffmpeg software-properties-common
-
-COPY requirements.txt .
-
-RUN pip3 install wheel
-RUN pip3 install --no-cache-dir -U -r requirements.txt
-
-COPY . .
-CMD ["python3.9", "-m", "DarlingRobot"]
+RUN apt update && apt upgrade -y
+RUN apt install git curl python3-pip -y
+RUN pip3 install -U pip
+RUN mkdir /app/
+WORKDIR /app/
+COPY . /app/
+RUN pip3 install -U -r requirements.txt
+CMD python3 -m DarlingRobot
