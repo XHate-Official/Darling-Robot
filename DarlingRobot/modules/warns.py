@@ -494,7 +494,7 @@ def helps(chat):
     return gs(chat, "warns_help")
 
 
-__mod_name__ = "Warning"
+__mod_name__ = "✘ ᴡᴀʀɴɪɴɢ ✘"
 
 WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.chat_type.groups, run_async=True)
 RESET_WARN_HANDLER = CommandHandler(
