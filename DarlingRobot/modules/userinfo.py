@@ -260,7 +260,7 @@ def info(update: Update, context: CallbackContext):
     text = (
         f"|•<b>UwU, Appraisal Results:</b> •|\n"
         f"                     |•|\n"
-        f"╔═════ஜ۞ஜ═════╗\n"
+        f"╔═════•۞•═════╗\n"
         f"✘ ID: <code>{user.id}</code>\n"
         f"✘ First Name: {html.escape(user.first_name)}"
     )
@@ -602,7 +602,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Info & AFK"
+__mod_name__ = "✘ ɪɴғᴏ & ᴀғᴋ ✘"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
