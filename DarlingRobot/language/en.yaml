@@ -455,6 +455,9 @@ fun_help: |
     ➻ /sanitize*:* always use this before /pat or any contact
     ➻ /pat*:* pats a user, or get patted
     ➻ /8ball*:* predicts using 8ball method
+    ➻ /ball*:* use and see
+    ➻ /dice*:* try your luck
+    ➻ /dart*:* use and see
 
     - ✧ Animation
     ➻ /love *:* Animation For Love ❤️
@@ -563,8 +566,7 @@ info_and_afk_help: |
     ➻ /afk <reason>*:* Mark yourself as AFK.
       - brb <reason>: Same as the afk command, but not a command. 
       
-    *What is that health thingy?*
-    Come and see [HP System explained](https://t.me/KennedyProject/44)
+
 locks_help: |
     ▬▬✘ Locks ✘▬▬
 
@@ -605,8 +607,9 @@ logomarker_help: |
     ▬▬✘ Logo Marker ✘▬▬
     
     This is help menu for logomaker
-    ➻ /logo <text/name> - Create a logo with random view.
-    ➻ /wlogo <text/name> - Create a logo with wide view only.
+    ➻ /logo <text/name> - Create a logo of anime boys.
+    ➻ /glogo <text/name> - Create a logo of anime girls.
+    ➻ /rlogo <text/name> - Create a logo of Anime cosplays.
 
     *✧ Image Editor : *
     ➻  /edit <reply photo> - to edit image.
@@ -614,8 +617,8 @@ musicplayer_help: |
     ▬▬✘ Musicplayer ✘▬▬
 
     Help Music can access with different command and support dashboard help and setting.
-    ➻ /mhelp - for help music module
-    ➻ /msettings - for setting music module
+    ➻ /help - for help music module
+    ➻ /settings - for setting music module
 
     NOTE : DON'T SPAM AT REQUEST SONG OR VIDEO...
 notes_help: |
@@ -826,6 +829,17 @@ afk_array5: "{} is back online!"
 afk_array6: "{} is finally here!"
 afk_array7: "Welcome back! {}"
 afk_array8: "Where is {}?\nIn the chat!"
+afk_array9: "Piro {} Is Back!"
+afk_are: "Why Came back {} Baka?"
+afk_are1: "Listen Evryone! {} Legend Just Arrived."
+afk_are2: "Yo,{} Came back for Waifus And Husbandos?"
+afk_are3: "Pro {} Arrived! Noob like me leaved."
+afk_are4: "Loli Lover {} Just Showed up!"
+afk_are5: "Finally {} You're here i was missing you.......................Jk :)"
+afk_are6: "Ok, {} Now Chat Here!"
+afk_are7: "Ehehehhehehhehe.......{} Showed Up"
+afk_arc8: "Dear {} Owner knows your secret!!!"
+afk_are9: "Your crush missed you so much"
 afk_check: "{} is afk"
 afk_check_reason: "{} is afk.\nReason: {}"
 
