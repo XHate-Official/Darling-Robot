@@ -552,7 +552,7 @@ def helps(chat):
     return gs(chat, "notes_help")
 
 
-__mod_name__ = "Notes"
+__mod_name__ = "✘ ɴᴏᴛᴇs ✘"
 
 GET_HANDLER = CommandHandler("get", cmd_get, run_async=True)
 HASH_GET_HANDLER = MessageHandler(Filters.regex(r"^#[^\s]+"), hash_get, run_async=True)
