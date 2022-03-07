@@ -401,7 +401,7 @@ def __chat_settings__(chat_id, user_id):
 def helps(chat):
     return gs(chat, "antiflood_help")
 
-__mod_name__ = "Anti-Flood"
+__mod_name__ = "✘ ᴀɴᴛɪ-ғʟᴏᴏᴅ ✘"
 
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.chat_type.groups,
