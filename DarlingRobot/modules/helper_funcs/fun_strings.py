@@ -286,6 +286,40 @@ ABUSE_STRINGS = (
     "A for apple b for ball kand tum karo tumahara baap kare bawal"
 )
 
+FLIRT_STRINGS = (
+    "I hope you know CPR, because you just took my breath away!",
+    "I ought to complain to Spotify for you not being named this week’s hottest single.",
+    "Are you a parking ticket? ‘Cause you’ve got ‘fine’ written all over you.",
+    "When I look in your eyes, I see a very kind soul.",
+    "If you were a vegetable, you’d be a ‘cute-cumber.",
+    "Do you happen to have a Band-Aid? ‘Cause I scraped my knees falling for you.",
+    "I never believed in love at first sight, but that was before I saw you.",
+    "You’re like a fine wine. The more of you I drink in, the better I feel.",
+    "You’ve got a lot of beautiful curves, but your smile is absolutely my favorite.",
+    "If being sexy was a crime, you’d be guilty as charged.",
+    "I was wondering if you’re an artist because you were so good at drawing me in.",
+    "Do you have a map? I just got lost in your eyes.",
+    "I’d like to take you to the movies, but they don’t let you bring in your own snacks.",
+    "You know what you would look really beautiful in? My arms.",
+    "Are you a magician? It’s the strangest thing, but every time I look at you, everyone else disappears.",
+    "I think there’s something wrong with my phone. Could you try calling it to see if it works?",
+    "Are you an electrician? Because you’re definitely lighting up my day/night!",
+    "I’ve heard it said that kissing is the ‘language of love.’ Would you care to have a conversation with me about it sometime?",
+    "I always thought happiness started with an ‘h,’ but it turns out mine starts with ‘u'",
+    "Do you know what the Little Nekos and I have in common? We both want to be part of your world.",
+    "You know, I always thought that Disneyland was the ‘happiest place on Earth,’ but that was before I got a chance to stand here next to you.",
+    "Want to go outside and get some fresh air with me? You just took my breath away.",
+    "Is your name Google? Because you have everything I’m searching for.",
+    "Do you ever get tired from running through my thoughts all night?",
+    "Your hand looks heavy—can I hold it for you?",
+    "Are you a time traveler? Because I absolutely see you in my future.",
+    "Hoii...Do you remember me? Oh, that’s right—we’ve only met in my dreams.",
+    "What does it feel like to be the most special member in the group?",
+    "I can’t tell if that was an earthquake, or if you just seriously rocked my world.",
+    "If you were a fruit, you’d be a ‘fine-apple',",
+    "I swear someone stole the stars from the sky and put them in your eyes.",
+)
+
 RUN_STRINGS = (
     "Where do you think you're going?",
     "Huh? what? did they get away?",
