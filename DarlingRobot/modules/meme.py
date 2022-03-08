@@ -199,7 +199,7 @@ def abuse(update, context):
     reply_text(random.choice(fun.ABUSE_STRINGS))
 
 
-@run_async
+run_async
 @typing_action
 def flirt(update, context):
     # reply to correct message
