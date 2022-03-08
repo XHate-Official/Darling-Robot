@@ -19,8 +19,8 @@ from DarlingRobot.ex_plugins.dbfunctions import (
 from DarlingRobot.utils.filter_groups import karma_negative_group, karma_positive_group
 from DarlingRobot import arq
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|pro|cool|good|👍)$"
-regex_downvote = r"^(\-|\-\-|\-1|👎|noob|weak)$"
+regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|pro|noice|piro|thmx|thamx|thamks|cool|good|👍)$"
+regex_downvote = r"^(\-|\-\-|\-1|👎|noob|nub|weak)$"
 
 
 
