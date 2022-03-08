@@ -209,6 +209,18 @@ def flirt(update, context):
         else update.effective_message.reply_text
     )
     reply_text(random.choice(fun.FLIRT_STRINGS))
+
+
+run_async
+@typing_action
+def insult(update, context):
+    # reply to correct message
+    reply_text = (
+        update.effective_message.reply_to_message.reply_text
+        if update.effective_message.reply_text
+        else update.effective_message.reply_text
+    )
+    reply_text(random.choice(fun.INSULT_STRINGS))
     
     
 @run_async
@@ -559,6 +571,7 @@ DECIDE_HANDLER = DisableAbleMessageHandler(
 )
 ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse, pass_args=True)
 FLIRT_HANDLER = DisableAbleCommandHandler("flirt", flirt, pass_args=True)
+INSULT_HANDLER = DisableAbleCommandHandler("insult", insult, pass_args=True)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs, pass_args=True)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
 HUG_HANDLER = DisableAbleCommandHandler("hug", hug)
@@ -593,6 +606,7 @@ dispatcher.add_handler(SHRUG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(ABUSE_HANDLER)
 dispatcher.add_handler(FLIRT_HANDLER)
+dispatcher.add_handler(INSULT_HANDLER)
 dispatcher.add_handler(RUNS_HANDLER)
 dispatcher.add_handler(SLAP_HANDLER)
 dispatcher.add_handler(HUG_HANDLER)
