@@ -79,7 +79,7 @@ async def _(event):
             while r.media.value !=required_number:
                 await r.delete()
                 r = await event.reply(file=InputMediaDice("🎳"))
-       except BaseException:
+        except BaseException:
            pass 
 
 
