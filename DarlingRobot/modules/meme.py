@@ -200,7 +200,7 @@ def abuse(update, context):
 
 
 @run_async
-@typing_actiom
+@typing_action
 def flirt(update, context):
     # reply to correct message
     reply_text = (
