@@ -72,7 +72,7 @@ UNGBAN_ERRORS = {
 }
 
 
-@sudo_plus
+@dev_plus
 def gban(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     message = update.effective_message
