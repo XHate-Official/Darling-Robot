@@ -17,6 +17,7 @@ from DarlingRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
+    support_plus,
 )
 from DarlingRobot.modules.helper_funcs.extraction import extract_user
 from DarlingRobot.modules.log_channel import gloggable
