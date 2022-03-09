@@ -541,7 +541,7 @@ def __chat_settings__(chat_id, user_id):
 def helps(chat):
     return gs(chat, "antispam_help")
 
-GBAN_HANDLER = CommandHandler("gban", gban, run_async=True)
+GBAN_HANDLER = CommandHandler("scan", scan, run_async=True)
 UNGBAN_HANDLER = CommandHandler("ungban", ungban, run_async=True)
 GBAN_LIST = CommandHandler("gbanlist", gbanlist, run_async=True)
 GBAN_STATUS = CommandHandler(
