@@ -14,13 +14,10 @@ PHOTO = "https://telegra.ph/file/901e4456059ee49d50dbf.jpg"
 @register(pattern=("/alive"))
 async def awake(event):
   TEXT = f"**⊱ ───── ஓ๑♡๑ஓ ───── ⊰**\n"
-  TEXT +=  f"**Yo [{event.sender.first_name}](tg://user?id={event.sender.id}), Myself Zero Two.** \n\n"
-  TEXT += "♡ **Baka, I'm Alive** \n\n"
-  TEXT += f"♡ **My Darling : [|×✠×|](https://t.me/X_Hate)** \n\n"
-  TEXT += f"♡ **Library Version :** `{telever}` \n"
-  TEXT += f"♡ **Telethon Version :** `{tlhver}` \n"
-  TEXT += f"♡ **Pyrogram Version :** `{pyrover}` \n\n"
-  TEXT += "**×͜× Thanks For Adding Me Hereꨄ\n**"
+  TEXT +=  f"**ʜᴏɪ [{event.sender.first_name}](tg://user?id={event.sender.id}), ᴍʏsᴇʟғ ᴢᴇʀᴏ ᴛᴡᴏ.** \n\n"
+  TEXT += "♡ **ʙᴀᴋᴀ, ɪ'ᴍ ᴀʟɪᴠᴇ** \n\n"
+  TEXT += f"♡ **ᴍʏ ᴅᴀʀʟɪɴɢ : [|×✠×|](https://t.me/X_Hate)** \n\n"
+  TEXT += "**×͜× ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ʜᴇʀᴇꨄ\n**"
   TEXT += "**⊱ ───── ஓ๑♡๑ஓ ───── ⊰**"
-  BUTTON = [[Button.url("✘ Help ✘", "https://t.me/ZeroXDarlingbot?start=help"), Button.url("✘ Support ✘", "https://t.me/ZeroTwoXSupport")]]
+  BUTTON = [[Button.url("✘ ʜᴇʟᴘ ✘", "https://t.me/ZeroXDarlingbot?start=help"), Button.url("✘ sᴜᴘᴘᴏʀᴛ ✘", "https://t.me/ZeroTwoXSupport")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
