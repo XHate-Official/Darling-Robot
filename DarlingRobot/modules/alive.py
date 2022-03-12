@@ -9,7 +9,7 @@ from DarlingRobot.events import register
 from DarlingRobot import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/901e4456059ee49d50dbf.jpg"
+PHOTO = "https://telegra.ph/file/ce38c6fa964344e307d03.mp4"
 
 @register(pattern=("/alive"))
 async def awake(event):
