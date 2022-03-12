@@ -14,9 +14,9 @@ PHOTO = "https://telegra.ph/file/ce38c6fa964344e307d03.mp4"
 @register(pattern=("/alive"))
 async def awake(event):
   TEXT = f"**⊱ ───── ஓ๑♡๑ஓ ───── ⊰**\n"
-  TEXT +=  f"**ʜᴏɪ [{event.sender.first_name}](tg://user?id={event.sender.id}), ᴍʏsᴇʟғ ᴢᴇʀᴏ ᴛᴡᴏ.** \n\n"
-  TEXT += "♡ **ʙᴀᴋᴀ, ɪ'ᴍ ᴀʟɪᴠᴇ** \n\n"
-  TEXT += f"♡ **ᴍʏ ᴅᴀʀʟɪɴɢ : [|×✠×|](https://t.me/X_Hate)** \n\n"
+  TEXT +=  f"**ʜᴏɪ [{event.sender.first_name}](tg://user?id={event.sender.id}), ᴍʏsᴇʟғ ᴢᴇʀᴏ ᴛᴡᴏ.** \n"
+  TEXT += "♡ **ʙᴀᴋᴀ, ɪ'ᴍ ᴀʟɪᴠᴇ** \n"
+  TEXT += f"♡ **ᴍʏ ᴅᴀʀʟɪɴɢ : [|×✠×|](https://t.me/X_Hate)** \n"
   TEXT += "**×͜× ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ʜᴇʀᴇꨄ\n**"
   TEXT += "**⊱ ───── ஓ๑♡๑ஓ ───── ⊰**"
   BUTTON = [[Button.url("✘ ʜᴇʟᴘ ✘", "https://t.me/ZeroXDarlingbot?start=help"), Button.url("✘ sᴜᴘᴘᴏʀᴛ ✘", "https://t.me/ZeroTwoXSupport")]]
