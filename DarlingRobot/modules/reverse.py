@@ -11,10 +11,10 @@ from telegram import InputMediaPhoto, TelegramError
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
-from DarlingBot import dispatcher
+from DarlingRobot import dispatcher
 
-from DarlingBot.modules.disable import DisableAbleCommandHandler
-from DarlingBot.modules.helper_funcs.alternate import typing_action
+from DarlingRobot.modules.disable import DisableAbleCommandHandler
+from DarlingRobot.modules.helper_funcs.alternate import typing_action
 
 opener = urllib.request.build_opener()
 useragent = 'Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0'
