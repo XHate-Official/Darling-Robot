@@ -186,7 +186,9 @@ def manga(update: Update, context: CallbackContext):
         msg.reply_text(
             rep, parse_mode=ParseMode.HTML, reply_markup=InlineKeyboardMarkup(keyb)
         )
-
+        
+def helps(chat):
+        return gs(chat, "animelist_help")
 
 __mod_name__ = "MyAnimeList"
 
