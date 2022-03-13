@@ -389,6 +389,9 @@ def darling_about_callback(update, context):
                         InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), callback_data="darling_support"),
                         InlineKeyboardButton(text="✘ System ✘", callback_data="darling_credit"),
                    ],
+                   [
+                       InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="darling_back"),
+                   ]    
                ]
             ),
         )
