@@ -354,9 +354,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/eruxupdates"),
+                                "Health", url="https://t.me/ZeroTwoXUpdates/4"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/eruxupdates")
+                                "Disaster", url="https://t.me/ZeroTwoXUpdates/5")
                         ],
                     ]
                 ),
@@ -371,9 +371,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/eruxupdates"),
+                                "Health", url="https://t.me/ZeroTwoXUpdates/4"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/eruxupdates")
+                                "Disaster", url="https://t.me/ZeroTwoXUpdates/5")
                         ],
                     ]
                 ),
