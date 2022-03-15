@@ -33,7 +33,7 @@ from bs4 import BeautifulSoup
 from pyrogram import filters
 from pyrogram.types import InputMediaPhoto, Message
 
-from DarlingRobot import MESSAGE_DUMP_CHAT, SUDOERS, USERBOT_PREFIX, app, app2, eor
+from DarlingRobot import SUDOERS, USERBOT_PREFIX, app, app2, eor
 from DarlingRobot.core.decorators.errors import capture_err
 from DarlingRobot.utils.functions import get_file_id_from_message
 from DarlingRobot.utils.http import get
