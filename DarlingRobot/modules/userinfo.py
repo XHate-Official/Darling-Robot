@@ -38,7 +38,7 @@ from DarlingRobot.modules.disable import DisableAbleCommandHandler
 from DarlingRobot.modules.sql.global_bans_sql import is_user_gbanned
 from DarlingRobot.modules.sql.afk_sql import is_afk, set_afk
 from DarlingRobot.modules.sql.users_sql import get_user_num_chats
-from DarlingRobot.modules.helper_funcs.decorators import erucallback
+from DarlingRobot.modules.helper_funcs.decorators import darlingcallback
 from DarlingRobot.modules.helper_funcs.chat_status import sudo_plus
 from DarlingRobot.modules.helper_funcs.extraction import extract_user
 from DarlingRobot import telethn
