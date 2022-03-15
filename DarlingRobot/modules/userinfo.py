@@ -18,7 +18,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
     
-from EruRobot import (
+from DarlingRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
