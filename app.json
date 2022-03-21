@@ -11,14 +11,6 @@
     
    "logo":    "https://telegra.ph/file/a8e452e8af2beebcc5506.jpg",  
    "repository": "https://github.com/XHate-Official/Darling-Robot",
-   "addons": [
-          {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
    "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python"
