@@ -35,9 +35,9 @@
          "required": true,
          "value": ""
       },    
-      "SQLALCHEMY_DATABASE_URI": {
-         "description": "Your postgres sql db, empty this field if you dont have one.",
-         "required": false,
+      "DATABASE_URL": {
+         "description": "Your postgres sql db, Go and get one at elephantSql.com .",
+         "required": true,
          "value": "sqldbtype://username:pw@hostname:port/db_name"
       },      
       "OWNER_ID": {
