@@ -240,7 +240,7 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/zeroxdarlingBot?start=health"),
+                             url="https://t.me/zerotwoxupdates/4"),
                        InlineKeyboardButton(
                              text="Disasters",
                              url="https://t.me/zerotwoxupdates/5"),
@@ -464,12 +464,12 @@ def stats(update, context):
     status += "*➢ Uptime:* " + str(botuptime) + "\n"
     try:
         update.effective_message.reply_photo(
-            MIKU_IMG,
+            DARLING_IMG,
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✘ Support ✘](@{SUPPORT_CHAT}) | [✘ Updates ✘](@ZerotwoXUpdates)\n\n"
-            + "\n╘══「 By [× ʜᴀᴛᴇ ×](@x_hate) 」\n",
+            + f"\n\n[✘ Support ✘](https://t.me/zerotwoxsupport) | [✘ Updates ✘](@ZerotwoXUpdates)\n\n"
+            + "\n╘══「 By [× ʜᴀᴛᴇ ×](https://t.me/x_hate) 」\n",
             parse_mode=ParseMode.MARKDOWN,
         )
     except BaseException:
@@ -480,16 +480,16 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT}) | ✦ [ᴜᴘᴅᴀᴛᴇs](https://t.me/ZerotwoXUpdates)\n\n"
+                    + f"\n\n✦ [sᴜᴘᴘᴏʀᴛ](https://t.me/zerotwoxsupport) | ✦ [ᴜᴘᴅᴀᴛᴇs](https://t.me/ZerotwoXUpdates)\n\n"
                 )
-                + "╘══「 by [• ʜᴀᴛᴇ •](https://t.me/h0daka) 」\n"
+                + "╘══「 by [• ʜᴀᴛᴇ •](https://t.me/x_hate) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Git",
+                             text="Github",
                              url="github.com/XHate-Official")                  
                      ] 
                 ]
