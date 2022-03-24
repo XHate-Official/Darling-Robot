@@ -43,6 +43,8 @@ from DarlingRobot.modules.helper_funcs.chat_status import sudo_plus
 from DarlingRobot.modules.helper_funcs.extraction import extract_user
 from DarlingRobot import telethn
 
+DARLING_IMG = "https://telegra.ph/file/61e92b18199d6818a4ddc.jpg"
+
 def no_by_per(totalhp, percentage):
     """
     rtype: num of `percentage` from total
@@ -472,6 +474,7 @@ def stats(update: Update, context: CallbackContext):
 
     try:
         update.effective_message.reply_text(
+            DARLING_IMG,
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
