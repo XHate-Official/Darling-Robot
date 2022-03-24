@@ -42,9 +42,9 @@ __help__ = """
 
 """
 
-ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animepfp", animepfp)
+ANIMEPFP_HANDLER = DisableAbleCommandHandler("animepfp", animepfp)
 
-dispatcher.add_handler(ANIMEQUOTES_HANDLER)
+dispatcher.add_handler(ANIMEPFP_HANDLER)
 
 __mod_name__ = "Anime pfp's"
 
