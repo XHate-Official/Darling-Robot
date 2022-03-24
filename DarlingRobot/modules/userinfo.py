@@ -471,7 +471,7 @@ def stats(update, context):
             + f"\n\n[✘ Support ✘](https://t.me/{SUPPORT_CHAT}) | [✘ Updates ✘](https://t.me/ZerotwoXUpdates)\n\n"
             + "\n╘══「 By [× ʜᴀᴛᴇ ×](https://t.me/x_hate) 」\n",
             parse_mode=ParseMode.MARKDOWN,
-            
+        )
     except BaseException:
         update.effective_message.reply_text(
             (
