@@ -10,7 +10,7 @@ from telegram.ext import CallbackContext, run_async
 
 from telegram.error import BadRequest
 
-import Flare_Robot.modules.animequotes_strings as animequotes_strings
+import DarlingRobot.modules.pfp_strings as pfp_strings
 
 from DarlingRobot import dispatcher
 
