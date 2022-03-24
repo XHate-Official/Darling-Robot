@@ -479,8 +479,6 @@ def stats(update: Update, context: CallbackContext):
             + f"\n\n[✘ Darling ✘](https://t.me/x_hate) | [✘ Support ✘](https://t.me/Zerotwoxsupport)\n\n"
             + "╘══「 Powered by [★ Maniax](https://t.me/ManiaxNetwork) 」\n",
             parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(kb),
-            disable_web_page_preview=True,
         )
     except BaseException:
         update.effective_message.reply_text(
@@ -499,15 +497,6 @@ def stats(update: Update, context: CallbackContext):
             disable_web_page_preview=True,
         )
 
-        
-@darlingcallback(pattern=r"^pingCB")
-def pingCallback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    start_time = time.time()
-    requests.get("https://api.telegram.org")
-    end_time = time.time()
-    ping_time = round((end_time - start_time) * 1000, 3)
-    query.answer("Pong! {}ms".format(ping_time))
 
 
 def about_bio(update: Update, context: CallbackContext):
