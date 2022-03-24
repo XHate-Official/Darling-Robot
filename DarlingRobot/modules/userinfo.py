@@ -469,8 +469,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✘ Support ✘](@{SUPPORT_CHAT}) | [✘ Updates ✘](@{UPDATES_CHANNEL})\n\n"
-            + "\n╘══「 By [× ʜᴀᴛᴇ ×](@x_hate) 」\n",
+            + f"\n\n[✘ Support ✘](https://t.me/ZeroTwoXSupport) | [✘ Updates ✘](https://t.me/zerotwoxupdates)\n\n"
+            + "\n╘══「 By [× ʜᴀᴛᴇ ×](https://t.me/x_hate) 」\n",
             parse_mode=ParseMode.MARKDOWN,
         )
     except BaseException:
