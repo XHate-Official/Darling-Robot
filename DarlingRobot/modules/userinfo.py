@@ -469,8 +469,6 @@ def stats(update: Update, context: CallbackContext):
     status += "*• python-Telegram-Bot:* " + str(ptbver) + "\n"
     status += "*• Uptime:* " + str(botuptime) + "\n"
     status += "*• Database size:* " + str(db_size) + "\n"
-    kb = [[InlineKeyboardButton("Ping", callback_data="pingCB")]]
-    
 
     try:
         update.effective_message.reply_text(
