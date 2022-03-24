@@ -484,6 +484,16 @@ def stats(update, context):
                 )
                 + "╘══「 by [• ʜᴀᴛᴇ •](https://t.me/h0daka) 」\n"
             ),
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="Git",
+                             url="github.com/XHate-Official")                  
+                     ] 
+                ]
+            ),
         )
         
         
