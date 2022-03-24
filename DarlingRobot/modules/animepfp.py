@@ -42,7 +42,7 @@ __help__ = """
 
 """
 
-ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animequotes", animequotes)
+ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("animepfp", animepfp)
 
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 
