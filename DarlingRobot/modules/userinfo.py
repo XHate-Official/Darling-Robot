@@ -35,7 +35,8 @@ from DarlingRobot import (
     dispatcher,
     sw,
     StartTime,
-    SUPPORT_CHAT
+    SUPPORT_CHAT,
+    UPDATES_CHANNEL
 )
 from DarlingRobot.__main__ import STATS, TOKEN, USER_INFO
 from DarlingRobot.modules.sql import SESSION
@@ -468,8 +469,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✘ Support ✘](https://t.me/zerotwoxsupport) | [✘ Updates ✘](@ZerotwoXUpdates)\n\n"
-            + "\n╘══「 By [× ʜᴀᴛᴇ ×](https://t.me/x_hate) 」\n",
+            + f"\n\n[✘ Support ✘](@{SUPPORT_CHAT}) | [✘ Updates ✘](@{UPDATES_CHANNEL})\n\n"
+            + "\n╘══「 By [× ʜᴀᴛᴇ ×](@x_hate) 」\n",
             parse_mode=ParseMode.MARKDOWN,
         )
     except BaseException:
