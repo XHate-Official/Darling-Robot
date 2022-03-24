@@ -483,6 +483,7 @@ def stats(update, context):
                     + f"\n\n✦ [sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT}) | ✦ [ᴜᴘᴅᴀᴛᴇs](https://t.me/ZerotwoXUpdates)\n\n"
                 )
                 + "╘══「 by [• ʜᴀᴛᴇ •](https://t.me/h0daka) 」\n"
+            ),
         )
         
         
