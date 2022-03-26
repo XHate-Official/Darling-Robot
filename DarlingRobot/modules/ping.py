@@ -87,7 +87,7 @@ def ping(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="• sᴜᴍᴍᴏɴ ᴍᴇ •", callback_data="stats_callback")
+                  InlineKeyboardButton(text="• sᴜᴍᴍᴏɴ ᴍᴇ •", url="t.me/DarlingXRobot?startgroup=new")
                   ]
                 ]
             ),
