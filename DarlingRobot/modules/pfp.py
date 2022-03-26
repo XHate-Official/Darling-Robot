@@ -10,7 +10,7 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 
-pfps = ("@BotXpfp", filter=InputMessagesFilterPhotos)
+pfps == ("@BotXpfp", filter=InputMessagesFilterPhotos)
 
 pfps = [
     "./ZeroxDarling/pfp/pfp1.png",
