@@ -822,8 +822,17 @@ def main():
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
                 f"""**Yes Darlin' [♡](https://telegra.ph/file/dc77ccfb44a0dcad98a32.mp4), i am finally activated!**""",
-                parse_mode=ParseMode.MARKDOWN
-            )
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="[♡ ᴀᴅᴅ ᴍᴇ ♡]",
+                             url="https://t.me/DarlingRoBot?startgroup=true")
+                     ] 
+                ]
+            ),
+        
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
