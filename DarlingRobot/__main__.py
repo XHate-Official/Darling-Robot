@@ -240,9 +240,9 @@ def start(update: Update, context: CallbackContext):
         update.effiective.message.reply_photo(
 	        random.choice(ZERO_IMGS),
 	        caption="<code>ʜᴏɪ ʜᴏɪ, ɪ'ᴍ ʜᴇʀᴇ....ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ! \n๏ ᴀʟɪᴠᴇ sɪɴᴄᴇ</code>: <code>{}</code>".format(
-	        	    uptime
-         ),
-         parse_mode=ParseMode.HTML,
+	                uptime
+                ),
+                parse_mode=ParseMode.HTML,
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
