@@ -206,7 +206,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/ZeroXDarlingbot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/DarlingXRobot?startgroup=new"),
                         ],
                         [
                             InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
@@ -418,7 +418,7 @@ def darling_about_callback(update, context):
                             InlineKeyboardButton(text=gs(chat.id, "ot_button"), url="t.me/Maniaxchats"),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/zeroxdarlingbot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/DarlingXRobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -460,8 +460,8 @@ def darling_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/DarlingxSupport"),
-                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/Darlingxupdate"),
+                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/Darling_Support"),
+                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/Darling_update"),
                     ],
                     [
                         InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="darling_"),
@@ -533,7 +533,7 @@ def Source_about_callback(update, context):
                             InlineKeyboardButton(text=gs(chat.id, "ot_button"), url="t.me/Maniaxchats"),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/ZeroXDarlingbot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/DarlingXRobot?startgroup=new"),
                         ]
                     ]
                 ),
