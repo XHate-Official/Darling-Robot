@@ -827,7 +827,7 @@ def main():
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="[♡ ᴀᴅᴅ ᴍᴇ ♡]",
+                             text="♡ ᴀᴅᴅ ᴍᴇ ♡",
                              url="https://t.me/DarlingRoBot?startgroup=true")
                      ] 
                 ]
