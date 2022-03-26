@@ -85,6 +85,16 @@ def get_readable_time(seconds: int) -> str:
 
 DARLING_IMG = "https://telegra.ph/file/370f1d214c38295ebeed7.jpg"
 
+ZERO_IMGS = (
+    "https://telegra.ph/file/e52ecfbe2ece635e2a5d4.jpg"
+    "https://telegra.ph/file/9a1b50edeece2cbc2efd8.jpg"
+    "https://telegra.ph/file/da0d2d58f8f871e9b7d29.jpg"
+    "https://telegra.ph/file/3790131081e98f0f3bcac.jpg"
+    "https://telegra.ph/file/c27af4a7dcf621758d36b.jpg"
+    "https://telegra.ph/file/2f6850d0d411531d9b0f0.jpg"
+    "https://telegra.ph/file/505e9af5baef40c0259eb.jpg"
+)    
+
 DONATE_STRING = """Thanks But I don't want any Donations. Just Please Support Us That's all, Thank you."""
 
 IMPORTED = {}
