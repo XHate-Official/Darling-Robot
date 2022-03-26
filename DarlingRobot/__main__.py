@@ -237,12 +237,31 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text(
-            text=gs(chat.id, "group_start_text").format(
-                escape_markdown(uptime),
-                ),
-                parse_mode=ParseMode.MARKDOWN
-        )
+        update.effiective.message.reply_photo(
+	        random.choice(ZERO_IMGS),
+	        caption="<code>ʜᴏɪ ʜᴏɪ, ɪ'ᴍ ʜᴇʀᴇ....ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ! \n๏ ᴀʟɪᴠᴇ sɪɴᴄᴇ</code>: <code>{}</code>".format(
+	        	    uptime
+         ),
+         parse_mode=ParseMode.HTML,
+                reply_markup=InlineKeyboardMarkup(
+                    [[
+                        InlineKeyboardButton(
+                            text="• sᴜᴍᴍᴏɴ ᴍᴇ •",
+                            url="t.me/{}?startgroup=true".format(context.bot.username))
+                    ],                    
+                    [
+                        InlineKeyboardButton(
+                            text="• sᴜᴘᴘᴏʀᴛ •",
+                            url="https://t.me/Darling_support"),
+                        InlineKeyboardButton(
+                            text="• ᴜᴘᴅᴀᴛᴇs •",
+                            url="https://t.me/Darling_updates")
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="• ᴍʏ ᴅᴀʀʟɪɴɢ •",
+                            url="t.me/X_Hate")
+                    ]]))
         
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
