@@ -85,16 +85,6 @@ def get_readable_time(seconds: int) -> str:
 
 DARLING_IMG = "https://telegra.ph/file/370f1d214c38295ebeed7.jpg"
 
-ZERO_IMGS = (
-    "https://telegra.ph/file/e52ecfbe2ece635e2a5d4.jpg"
-    "https://telegra.ph/file/9a1b50edeece2cbc2efd8.jpg"
-    "https://telegra.ph/file/da0d2d58f8f871e9b7d29.jpg"
-    "https://telegra.ph/file/3790131081e98f0f3bcac.jpg"
-    "https://telegra.ph/file/c27af4a7dcf621758d36b.jpg"
-    "https://telegra.ph/file/2f6850d0d411531d9b0f0.jpg"
-    "https://telegra.ph/file/505e9af5baef40c0259eb.jpg"
-)    
-
 DONATE_STRING = """Thanks But I don't want any Donations. Just Please Support Us That's all, Thank you."""
 
 IMPORTED = {}
@@ -237,31 +227,12 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_photo(
-	        random.choice(ZERO_IMGS),
-	        caption="<code>ʜᴏɪ ʜᴏɪ, ɪ'ᴍ ʜᴇʀᴇ....ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ! \n๏ ᴀʟɪᴠᴇ sɪɴᴄᴇ</code>: <code>{}</code>".format(
-	                uptime
+        update.effective_message.reply_text(
+            text=gs(chat.id, "group_start_text").format(
+                escape_markdown(uptime),
                 ),
-                parse_mode=ParseMode.HTML,
-                reply_markup=InlineKeyboardMarkup(
-                    [[
-                        InlineKeyboardButton(
-                            text="• sᴜᴍᴍᴏɴ ᴍᴇ •",
-                            url="t.me/{}?startgroup=true".format(context.bot.username))
-                    ],                    
-                    [
-                        InlineKeyboardButton(
-                            text="• sᴜᴘᴘᴏʀᴛ •",
-                            url="https://t.me/Darling_support"),
-                        InlineKeyboardButton(
-                            text="• ᴜᴘᴅᴀᴛᴇs •",
-                            url="https://t.me/Darling_updates")
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="• ᴍʏ ᴅᴀʀʟɪɴɢ •",
-                            url="t.me/X_Hate")
-                    ]]))
+                parse_mode=ParseMode.MARKDOWN
+        )
         
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
