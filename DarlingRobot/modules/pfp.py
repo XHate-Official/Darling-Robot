@@ -4,14 +4,17 @@ import time
 
 from DarlingRobot import dispatcher
 from DarlingRobot.modules.disable import DisableAbleCommandHandler
+from DarlingRobot import telethn as tbot, ubot2
 from DarlingRobot.modules.helper_funcs.chat_status import is_user_admin
 from DarlingRobot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 
-pfps == ("@BotXpfp", filter=InputMessagesFilterPhotos)
-
+pfps = []
+async for i in ubot2.iter_messages(
+    "@BotXpfp", filter=InputMessagesFilterPhotos
+):
 pfps = [
     "./ZeroxDarling/pfp/pfp1.png",
     "./Zeroxdarling /pfp/pfp2.png",
