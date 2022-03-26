@@ -2,7 +2,7 @@ import time
 from typing import List
 
 import requests
-from telegram import ParseMode, Update
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
 from DarlingRobot import StartTime, dispatcher
@@ -79,12 +79,19 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "<b>PONG</b> ✨\n"
+        "<b>PONG</b> [✨](https://telegra.ph/file/5449a47b0d9333157327a.jpg)\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
         "<b>Service Uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
         
         parse_mode=ParseMode.HTML,
-    )
+        reply_markup=InlineKeyboardMarkup(
+                [
+                  [
+                  InlineKeyboardButton(text="System Stats 💻", callback_data="stats_callback")
+                  ]
+                ]
+            ),
+        )
 
 
 @sudo_plus
