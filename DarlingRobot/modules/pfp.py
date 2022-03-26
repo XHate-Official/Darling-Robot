@@ -11,8 +11,10 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 
+TheVenomXD = str(media.document.attributes[0])
+
 pics = []
-async for i in ubot2.iter_messages(
+async for TheVenomXD in ubot2.iter_messages(
     "@BotXpfp", filter=InputMessagesFilterPhotos
 ):
 
