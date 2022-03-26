@@ -12,9 +12,10 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 
 pfps = []
-async for i in ubot2.iter_messages(
-    "@BotXpfp", filter=InputMessagesFilterPhotos
-):
+    async for i in ubot2.iter_messages(
+        "@BotXpfp", filter=InputMessagesFilterPhotos
+    ):
+
 pfps = [
     "./ZeroxDarling/pfp/pfp1.png",
     "./Zeroxdarling /pfp/pfp2.png",
