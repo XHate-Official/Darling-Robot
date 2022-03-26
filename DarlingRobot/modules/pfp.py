@@ -11,10 +11,10 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 
-        pics = []
-        async for i in ubot2.iter_messages(
-            "@BotXlogo", filter=InputMessagesFilterPhotos
-        ):
+pics = []
+async for i in ubot2.iter_messages(
+    "@BotXpfp", filter=InputMessagesFilterPhotos
+):
 
 pfps = [
     "./ZeroxDarling/pfp/pfp1.png",
