@@ -237,7 +237,7 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effiective.message.reply_photo(
+        update.effective_message.reply_photo(
 	        random.choice(ZERO_IMGS),
 	        caption="<code>ʜᴏɪ ʜᴏɪ, ɪ'ᴍ ʜᴇʀᴇ....ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ! \n๏ ᴀʟɪᴠᴇ sɪɴᴄᴇ</code>: <code>{}</code>".format(
 	                uptime
