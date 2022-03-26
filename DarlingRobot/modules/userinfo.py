@@ -241,10 +241,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/zerotwoxupdates/4"),
+                             url="https://t.me/Darling_Updates/5"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/zerotwoxupdates/5"),
+                             url="https://t.me/Darling_Updates/4"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -469,8 +469,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✘ Support ✘](https://t.me/ZeroTwoXSupport) | [✘ Updates ✘](https://t.me/zerotwoxupdates)\n\n"
-            + "\n╘══「 By [× ʜᴀᴛᴇ ×](https://t.me/x_hate) 」\n",
+            + f"\n\n[✘ Support ✘](https://t.me/Darling_Support) | [✘ Updates ✘](https://t.me/Darling_updates)\n\n"
+            + "╘══「 By [× ʜᴀᴛᴇ ×](https://t.me/x_hate) 」\n",
             parse_mode=ParseMode.MARKDOWN,
         )
     except BaseException:
@@ -481,7 +481,7 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [sᴜᴘᴘᴏʀᴛ](https://t.me/zerotwoxsupport) | ✦ [ᴜᴘᴅᴀᴛᴇs](https://t.me/ZerotwoXUpdates)\n\n"
+                    + f"\n\n✦ [sᴜᴘᴘᴏʀᴛ](https://t.me/Darling_Support) | ✦ [ᴜᴘᴅᴀᴛᴇs](https://t.me/Darling_updates)\n\n"
                 )
                 + "╘══「 by [• ʜᴀᴛᴇ •](https://t.me/x_hate) 」\n"
             ),
@@ -544,7 +544,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust the Ackermans to set my bio.",
+                "Erm... yeah, I only trust my Darling to set my bio.",
             )
             return
 
