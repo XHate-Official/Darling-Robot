@@ -3,7 +3,7 @@ import random
 import glob
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
-from DarlingRobot.events.events import register
+from DarlingRobot.events import register
 from DarlingRobot import telethn as tbot, ubot2
 from DarlingRobot.modules.language import gs
 
