@@ -230,7 +230,7 @@ def start(update: Update, context: CallbackContext):
         DARLINGSTART = "https://telegra.ph/file/978f5bafa95e578a5208b.jpg"
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
-           DARLINGSTART, caption= "<b> Hᴏɪ {} \nɪ'ᴍ ᴀʟɪᴠᴇ sɪɴᴄᴇ since</b>: <code>{}</code>".format(
+           DARLINGSTART, caption= "<b> Hᴏɪ {} \nɪ'ᴍ ᴀʟɪᴠᴇ sɪɴᴄᴇ</b>: <code>{}</code>".format(
                 escape_markdown(first_name),
                 uptime
             ),
