@@ -239,7 +239,7 @@ def start(update: Update, context: CallbackContext):
                     [[
                         InlineKeyboardButton(
                             text="ᴏᴡɴᴇʀ",
-                            url="t.me/x_hate)
+                            url="t.me/x_hate")
                     ],
                     [
                         InlineKeyboardButton(
