@@ -227,7 +227,7 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        DARLINGSTART = "https://telegra.ph/file/f01274dd27c5126bdfe75.jpg"
+        DARLINGSTART = "https://telegra.ph/file/978f5bafa95e578a5208b.jpg"
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
            DARLINGSTART, caption= "<b> Hᴏɪ {} \nɪ'ᴍ ᴀʟɪᴠᴇ sɪɴᴄᴇ since</b>: <code>{}</code>".format(
