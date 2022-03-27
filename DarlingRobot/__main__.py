@@ -227,11 +227,30 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text(
-            text=gs(chat.id, "group_start_text").format(
-                escape_markdown(uptime),
-                ),
-                parse_mode=ParseMode.MARKDOWN
+        DARLINGSTART = "https://telegra.ph/file/f01274dd27c5126bdfe75.jpg"
+        first_name = update.effective_user.first_name
+        update.effective_message.reply_photo(
+           DARLINGSTART, caption= "<b> Hᴏɪ {} \nɪ'ᴍ ᴀʟɪᴠᴇ sɪɴᴄᴇ since</b>: <code>{}</code>".format(
+                escape_markdown(first_name),
+                uptime
+            ),
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="sᴜᴘᴘᴏʀᴛ",
+                            url=f"https://t.me/Darling_Support",                       
+                        InlineKeyboardButton(
+                            text="ʜᴇʟᴘ",
+                            url="https://t.me/DarlingXRobot?start=help",
+                     ],
+                     [
+                        InlineKeyboardButton(
+                          text="ᴅᴀʀʟɪɴɢ", url=f"https://t.me/X_Hate"
+                     ]                     
+                ]
+            ),
         )
         
 def error_handler(update, context):
