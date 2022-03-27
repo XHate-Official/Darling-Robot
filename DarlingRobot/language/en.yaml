@@ -65,7 +65,7 @@ pm_about_credit_text: |
   
 
 pm_help_text: |
-  *✘ Click on the button bellow to get description about specifics command. ✘*
+  *✘ Click on the button bellow to get description about specifics command.* [✘](https://telegra.ph/file/7a14ee38426963baddc9f.jpg)
 pm_help_module_text: "Here is the help for the *{}* module :\n\n"
 
 # Group Help Text
