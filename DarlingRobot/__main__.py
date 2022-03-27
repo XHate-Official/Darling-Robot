@@ -238,21 +238,16 @@ def start(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="ᴏᴡɴᴇʀ",
+                            text="• ᴏᴡɴᴇʀ •",
                             url="t.me/x_hate")
                     ],
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ",
+                            text="• sᴜᴘᴘᴏʀᴛ •",
                             url="https://t.me/Darling_Support"),
                         InlineKeyboardButton(
-                            text="ʜᴇʟᴘ",
+                            text="• ʜᴇʟᴘ •",
                             url="https://t.me/DarlingXRobot?start=help")
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="sᴜᴍᴍᴏɴ ᴍᴇ",
-                            url="t.me/DarlingXRobot?startgroup=new")
                     ]]))
         
                      
