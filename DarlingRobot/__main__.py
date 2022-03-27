@@ -236,22 +236,24 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [
+                    [[
+                        InlineKeyboardButton(
+                            text="ᴏᴡɴᴇʀ",
+                            url="t.me/x_hate)
+                    ],
                     [
                         InlineKeyboardButton(
                             text="sᴜᴘᴘᴏʀᴛ",
-                            url=f"https://t.me/Darling_Support",                       
+                            url="https://t.me/Darling_Support"),
                         InlineKeyboardButton(
                             text="ʜᴇʟᴘ",
-                            url="https://t.me/DarlingXRobot?start=help",
-                     ],
-                     [
+                            url="https://t.me/DarlingXRobot?start=help")
+                    ],
+                    [
                         InlineKeyboardButton(
-                          text="ᴅᴀʀʟɪɴɢ", url=f"https://t.me/X_Hate"
-                     ]                     
-                ]
-            ),
-         )
+                            text="sᴜᴍᴍᴏɴ ᴍᴇ",
+                            url="t.me/DarlingXRobot?startgroup=new")
+                    ]]))
         
                      
                          
