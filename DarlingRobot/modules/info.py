@@ -1,126 +1,62 @@
-import os
+from telethon import custom, events, Button
+import os,re
+import asyncio
 
-from pyrogram import filters
-from pyrogram.types import Message
+from DarlingRobot import telethn as bot
+from DarlingRobot import telethn as tgbot
+from DarlingRobot import telethn as aasf
+from DarlingRobot.events import register 
 
-from DarlingRobot import DEV_USERS
-from DarlingRobot import pbot as app
-from DarlingRobot.services.sections import section
+edit_time = 5
+zero1 = "https://telegra.ph/file/8c85a958e7e60123f0989.jpg"
+zero2 = "https://telegra.ph/file/1cf80ad46f2cdb754266e.jpg"
+zero3 = "https://telegra.ph/file/eafefc2558b876818d714.jpg"
+zero4 = "https://telegra.ph/file/7878a1946e9ea336d7f2c.jpg"
 
+@register(pattern="/myinfo")
+async def proboyx(event):
+  button = [[custom.Button.inline("• ᴄʟɪᴄᴋ ʜᴇʀᴇ •",data="information")]]
+  on = await aasf.send_message(event.chat, f"**❀ Hᴏɪ.. {(event.sender.first_name)}**\n\n**❀ I Aᴍ [ᴢᴇʀᴏ ᴛᴡᴏ](https://t.me/DarlingXRobot)**\n**❀ Mʏ ᴅᴀʀʟɪɴɢ ɪs [Aᴀʀᴀᴠ](t.me/X_Hate)**\n*❀ ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏ*", file=zero1, buttons=button)
 
-async def get_user_info(user, already=False):
-    if not already:
-        user = await app.get_users(user)
-    if not user.first_name:
-        return ["Deleted account", None]
-    user_id = user.id
-    username = user.username
-    first_name = user.first_name
-    mention = user.mention("Link")
-    dc_id = user.dc_id
-    photo_id = user.photo.big_file_id if user.photo else None
-    is_sudo = user_id in DEV_USERS
-    body = {
-        "ID": user_id,
-        "DC": dc_id,
-        "Name": [first_name],
-        "Username": [("@" + username) if username else None],
-        "Mention": [mention],
-        "Sudo": is_sudo,
-    }
-    caption = section("User info", body)
-    return [caption, photo_id]
+  await asyncio.sleep(edit_time)
+  ok = await aasf.edit_message(event.chat_id, on, file=zero2, buttons=button) 
 
+  await asyncio.sleep(edit_time)
+  ok2 = await aasf.edit_message(event.chat_id, ok, file=zero3, buttons=button)
 
-async def get_chat_info(chat, already=False):
-    if not already:
-        chat = await app.get_chat(chat)
-    chat_id = chat.id
-    username = chat.username
-    title = chat.title
-    type_ = chat.type
-    is_scam = chat.is_scam
-    description = chat.description
-    members = chat.members_count
-    is_restricted = chat.is_restricted
-    link = f"[Link](t.me/{username})" if username else None
-    dc_id = chat.dc_id
-    photo_id = chat.photo.big_file_id if chat.photo else None
-    body = {
-        "ID": chat_id,
-        "DC": dc_id,
-        "Type": type_,
-        "Name": [title],
-        "Username": [("@" + username) if username else None],
-        "Mention": [link],
-        "Members": members,
-        "Scam": is_scam,
-        "Restricted": is_restricted,
-        "Description": [description],
-    }
-    caption = section("Chat info", body)
-    return [caption, photo_id]
+  await asyncio.sleep(edit_time)
+  ok3 = await aasf.edit_message(event.chat_id, ok2, file=zero1, buttons=button)
+    
+  await asyncio.sleep(edit_time)
+  ok4 = await aasf.edit_message(event.chat_id, ok3, file=zero3, buttons=button)
+    
+  await asyncio.sleep(edit_time)
+  ok5 = await aasf.edit_message(event.chat_id, ok4, file=zero2, buttons=button)
+    
+  await asyncio.sleep(edit_time)
+  ok6 = await aasf.edit_message(event.chat_id, ok5, file=zero3, buttons=button)
+    
+  await asyncio.sleep(edit_time)
+  ok7 = await aasf.edit_message(event.chat_id, ok6, file=zero1, buttons=button)
 
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"information")))
+async def callback_query_handler(event):
+  try:
+    boy = event.sender_id
+    PRO = await bot.get_entity(boy)
+    ZERO = "❀ ʏᴏᴜʀ ᴅᴇᴛᴀɪʟs ʙʏ ᴢᴇʀᴏ ᴛᴡᴏ \n"
+    ZERO += f"➻ ғɪʀsᴛ ɴᴀᴍᴇ : {PRO.first_name} \n"
+    ZERO += f"➻ ʟᴀsᴛ ɴᴀᴍᴇ : {PRO.last_name}\n"
+    ZERO += f"➻ ʏᴏᴜ ʙᴏᴛ? : {PRO.bot} \n"
+    ZERO += f"➻ ʀᴇsᴛʀɪᴄᴛᴇᴅ? : {PRO.restricted} \n"
+    ZERO += f"➻ ʏᴏᴜʀ ɪᴅ : {boy}\n"
+    ZERO += f"➻ ʏᴏᴜʀ ᴜsᴇʀɴᴀᴍᴇ : {PRO.username}\n"
+    await event.answer(ZERO, alert=True)
+  except Exception as e:
+    await event.reply(f"{e}")
 
-@app.on_message(filters.command("uinfo"))
-async def info_func(_, message: Message):
-    if message.reply_to_message:
-        user = message.reply_to_message.from_user.id
-    elif not message.reply_to_message and len(message.command) == 1:
-        user = message.from_user.id
-    elif not message.reply_to_message and len(message.command) != 1:
-        user = message.text.split(None, 1)[1]
+__mod_name__ = "✘ ᴍʏ ɪɴғᴏ ✘"
 
-    m = await message.reply_text("Processing...")
-
-    try:
-        info_caption, photo_id = await get_user_info(user)
-    except Exception as e:
-        return await m.edit(str(e))
-
-    if not photo_id:
-        return await m.edit(
-            info_caption, disable_web_page_preview=True
-        )
-    photo = await app.download_media(photo_id)
-
-    await message.reply_photo(
-        photo, caption=info_caption, quote=False
-    )
-    await m.delete()
-    os.remove(photo)
-
-
-@app.on_message(filters.command("cinfo"))
-async def chat_info_func(_, message: Message):
-    try:
-        if len(message.command) > 2:
-            return await message.reply_text(
-                "**Usage:**cinfo <chat id/username>"
-            )
-
-        if len(message.command) == 1:
-            chat = message.chat.id
-        elif len(message.command) == 2:
-            chat = message.text.split(None, 1)[1]
-
-        m = await message.reply_text("Processing...")
-
-        info_caption, photo_id = await get_chat_info(chat)
-        if not photo_id:
-            return await m.edit(
-                info_caption, disable_web_page_preview=True
-            )
-
-        photo = await app.download_media(photo_id)
-        await message.reply_photo(
-            photo, caption=info_caption, quote=False
-        )
-
-        await m.delete()
-        os.remove(photo)
-    except Exception as e:
-        await m.edit(e)
-
-
-__mod_name__ = "nothing"
+__help__ = """
+ ~ /myinfo *:* Get Your Details On Inline. 
+"""
