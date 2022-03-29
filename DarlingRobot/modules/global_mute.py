@@ -9,10 +9,10 @@ from telegram.ext import CommandHandler, Filters, MessageHandler
 import DarlingRobot.modules.sql.global_mutes_sql as sql
 from DarlingRobot import (
     DEV_USERS,
-    FAFNIRS,
+    DRAGONS,
     OWNER_ID,
-    REDLIONS,
-    SPRYZONS,
+    DEMONS,
+    WOLVES,
     STRICT_GMUTE,
     dispatcher,
 )
