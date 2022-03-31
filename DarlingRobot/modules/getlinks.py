@@ -10,12 +10,13 @@ from DarlingRobot.modules.helper_funcs.filters import CustomFilters
 from DarlingRobot import dispatcher
 import random, re
 
+
 @run_async
 @bot_admin
 def getlink(bot: Bot, update: Update, args: List[int]):
     message = update.effective_message
     if args:
-        pattern = re.compile(r'-\d+')
+        pattern = re.compile(r"-\d+")
     else:
         message.reply_text("You don't seem to be referring to any chats.")
     links = "Invite link(s):\n"
@@ -27,14 +28,19 @@ def getlink(bot: Bot, update: Update, args: List[int]):
                 invitelink = bot.exportChatInviteLink(chat_id)
                 links += str(chat_id) + ":\n" + invitelink + "\n"
             else:
-                links += str(chat_id) + ":\nI don't have access to the invite link." + "\n"
+                links += (
+                    str(chat_id) + ":\nI don't have access to the invite link." + "\n"
+                )
         except BadRequest as excp:
-                links += str(chat_id) + ":\n" + excp.message + "\n"
+            links += str(chat_id) + ":\n" + excp.message + "\n"
         except TelegramError as excp:
-                links += str(chat_id) + ":\n" + excp.message + "\n"
+            links += str(chat_id) + ":\n" + excp.message + "\n"
 
     message.reply_text(links)
 
-GETLINK_HANDLER = CommandHandler("getlink", getlink, pass_args=True, filters=CustomFilters.sudo_filter)
+
+GETLINK_HANDLER = CommandHandler(
+    "getlink", getlink, pass_args=True, filters=CustomFilters.sudo_filter
+)
 
 dispatcher.add_handler(GETLINK_HANDLER)
