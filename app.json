@@ -84,7 +84,7 @@
          "value": ""
       },
       "REDIS_URL": {
-         "description": "This is important Var used for Afk time count and many more if added lmao",
+         "description": "This is important Var used for Afk time count and many more if added lmao.",
          "required": true
      },
      "EVENT_LOGS": {
