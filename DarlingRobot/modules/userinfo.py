@@ -43,7 +43,7 @@ from DarlingRobot.modules.sql import SESSION
 import DarlingRobot.modules.sql.userinfo_sql as sql
 from DarlingRobot.modules.disable import DisableAbleCommandHandler
 from DarlingRobot.modules.sql.global_bans_sql import is_user_gbanned
-from DarlingRobot.modules.sql.afk_sql import is_afk, set_afk
+from DarlingRobot.modules.sql.afk_redis import is_user_afk, afk_reason
 from DarlingRobot.modules.sql.users_sql import get_user_num_chats
 from DarlingRobot.modules.helper_funcs.chat_status import sudo_plus
 from DarlingRobot.modules.helper_funcs.extraction import extract_user
@@ -118,15 +118,14 @@ def hpmanager(user):
         if not sql.get_user_bio(user.id):
             new_hp -= no_by_per(total_hp, 10)
 
-        if is_afk(user.id):
-            afkst = check_afk_status(user.id)
+        if is_user_afk(user.id):
+            afkst = afk_reason(user.id)
             # if user is afk and no reason then decrease 7%
             # else if reason exist decrease 5%
-            new_hp -= no_by_per(total_hp, 7) if not afkst else no_by_per(total_hp, 5)
-            # fbanned users will have (2*number of fbans) less from max HP
-            # Example: if HP is 100 but user has 5 diff fbans
-            # Available HP is (2*5) = 10% less than Max HP
-            # So.. 10% of 100HP = 90HP
+            if not afkst:
+                new_hp -= no_by_per(total_hp, 7)
+            else:
+                new_hp -= no_by_per(total_hp, 5)
 
     else:
         new_hp = no_by_per(total_hp, 5)
@@ -289,7 +288,7 @@ def info(update: Update, context: CallbackContext):
     if chat.type != "private" and user_id != bot.id:
         _stext = "\n✘ Presence: <code>{}</code>"
 
-        afk_st = is_afk(user.id)
+        afk_st = is_user_afk(user.id)
         if afk_st:
             text += _stext.format("AFK")
         else:
