@@ -3,8 +3,8 @@ import functools
 import requests
 from pyrogram import filters
 
-from TGN.function.pluginhelpers import get_text
-from TGN import pbot
+from DarlingRobot.function.pluginhelpers import get_text
+from DarlingRobot import pbot
 
 API1 = "https://single-developers.up.railway.app?write="
 API2 = "https://single-developers.up.railway.app/write"
