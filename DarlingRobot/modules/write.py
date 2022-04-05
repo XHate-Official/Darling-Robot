@@ -3,7 +3,7 @@ import functools
 import requests
 from pyrogram import filters
 
-from DarlingRobot.function.pluginhelpers import get_text
+from DarlingRobot.utils.pluginhelpers import get_text
 from DarlingRobot import pbot
 
 API1 = "https://single-developers.up.railway.app?write="
