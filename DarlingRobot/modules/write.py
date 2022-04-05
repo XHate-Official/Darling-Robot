@@ -57,7 +57,9 @@ async def writer(client, message):
                 return
         if not text:
             try:
-                await msg.edit("**Atleast Use the proper command like this:-**\n\n`/write [name]`")
+                await msg.edit(
+                    "**Atleast Use the proper command like this:-**\n\n`/write [name]`"
+                )
                 return
             except:
                 return
