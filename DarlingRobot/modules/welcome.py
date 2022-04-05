@@ -201,7 +201,7 @@ def new_member(update: Update, context: CallbackContext):
 
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                update.effective_message.reply_video(
+                update.effective_message.reply_photo(
                     DARLING_IMG, caption= "OwO!!! My Darling Just Joined this group", 
                     reply_to_message_id=reply,
                 )
