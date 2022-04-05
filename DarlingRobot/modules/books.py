@@ -1,4 +1,4 @@
-# Special Thanks @TeamDaisyX 
+# Special Thanks @TeamDaisyX
 
 import os
 import re
