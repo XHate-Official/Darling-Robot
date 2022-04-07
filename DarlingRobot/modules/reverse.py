@@ -20,7 +20,7 @@ opener = urllib.request.build_opener()
 useragent = 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G920V Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36'
 opener.addheaders = [('User-agent', useragent)]
 
-@run_async
+run_async
 def reverse(update: Update, context:CallbackContext):
     msg = update.effective_message
     chat_id = update.effective_chat.id
