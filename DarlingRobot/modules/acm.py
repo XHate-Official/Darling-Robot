@@ -16,8 +16,8 @@ from DarlingRobot.modules.helper_funcs.chat_status import (
 )
 
 from DarlingRobot.modules.helper_funcs.extraction import (
-    cextract_user,
-    cextract_user_and_text,
+    extract_user,
+    extract_user_and_text,
 )
 from DarlingRobot.modules.log_channel import loggable
 from DarlingRobot.modules.helper_funcs.alternate import send_message
