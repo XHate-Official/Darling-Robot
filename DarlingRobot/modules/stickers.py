@@ -190,7 +190,7 @@ def kang(update, context):
             sticker_emoji = "🙂"
 
         adding_process = msg.reply_text(
-            "<b>Your sticker will be added in few seconds, please wait...</b>",
+            "<b>Please wait...For a Moment</b>",
             parse_mode=ParseMode.HTML,
         )
 
@@ -260,7 +260,7 @@ def kang(update, context):
                 elif e.message == "Sticker_png_dimensions":
                     im.save(kangsticker, "PNG")
                     adding_process = msg.reply_text(
-                        "<b>Your sticker will be added in few seconds, please wait...</b>",
+                        "<b>Please wait...For a Moment</b>",
                         parse_mode=ParseMode.HTML,
                     )
                     context.bot.add_sticker_to_set(
@@ -582,9 +582,9 @@ def kang(update, context):
              ],
              [
               InlineKeyboardButton(
-               text="Video-Pack", url="https://t.me/TanjirouXUpdates/35"),
+               text="Support", url="https://t.me/Darling_support"),
               InlineKeyboardButton(
-               text="Animated-Pack", url="https://t.me/TanjirouXUpdates/35"),
+               text="Updates", url="https://t.me/Darling_updates"),
              ],
             ]
         )
