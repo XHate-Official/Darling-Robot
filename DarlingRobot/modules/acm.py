@@ -25,7 +25,7 @@ from DarlingRobot.modules.helper_funcs.alternate import send_message
 from DarlingRobot.modules.sql import acm_sql
 from DarlingRobot.modules.helper_funcs.decorators import darlingcmd 
  
-from ..modules.helper_funcs.anonymous import userr_admin, AdminPerms
+from ..modules.helper_funcs.anonymous import user_admin, AdminPerms
 
 
 
