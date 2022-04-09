@@ -1,9 +1,5 @@
 
-<center>
-  <h1> 
-    Zero two <a href="https://www.codefactor.io/repository/github/idzero23/saintaries"><img src="https://www.codefactor.io/repository/github/idzero23/saintaries/badge?s=745e055fa302e5a4447c78cc7209bfcac5798841" alt="CodeFactor" /></a>
-  </h1>
-</center>
+
 
 ![Zero Two](https://telegra.ph/file/6b95091d3cac576327002.jpg)
 
