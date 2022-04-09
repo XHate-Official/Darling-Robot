@@ -578,13 +578,7 @@ def kang(update, context):
             [
              [
               InlineKeyboardButton(
-               text="Sticker-Pack", url=f"{packs}"),
-             ],
-             [
-              InlineKeyboardButton(
-               text="Support", url="https://t.me/Darling_support"),
-              InlineKeyboardButton(
-               text="Updates", url="https://t.me/Darling_updates"),
+               text="Sticker Pack", url=f"{packs}"),
              ],
             ]
         )
