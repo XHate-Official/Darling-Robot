@@ -79,7 +79,7 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "<b><a href='https://telegra.ph/file/5449a47b0d9333157327a.jpg'>PONG</a></b> ✨\n"
+        "<b><a href='https://telegra.ph/file/f38c80dfe042b3e800f68.jpg'>PONG</a></b> ✨\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
         "<b>Service Uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
         
@@ -87,7 +87,7 @@ def ping(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="• sᴜᴍᴍᴏɴ ᴍᴇ •", url="t.me/DarlingXRobot?startgroup=new")
+                  InlineKeyboardButton(text="• sᴜᴍᴍᴏɴ ᴍᴇ •", url="t.me/Foundingtitanbot?startgroup=new")
                   ]
                 ]
             ),
