@@ -8,10 +8,10 @@ from DarlingRobot import telethn as aasf
 from DarlingRobot.events import register 
 
 edit_time = 5
-zero1 = "https://telegra.ph/file/8c85a958e7e60123f0989.jpg"
-zero2 = "https://telegra.ph/file/1cf80ad46f2cdb754266e.jpg"
-zero3 = "https://telegra.ph/file/eafefc2558b876818d714.jpg"
-zero4 = "https://telegra.ph/file/7878a1946e9ea336d7f2c.jpg"
+zero1 = "https://telegra.ph/file/618781c639bf0dc2e9dae.jpg"
+zero2 = "https://telegra.ph/file/abba1e3a7e38fbf096f00.jpg"
+zero3 = "https://telegra.ph/file/55352a84ee76e1f6b6e73.jpg"
+zero4 = "https://telegra.ph/file/d40dd93d86d3e67276deb.jpg"
 
 @register(pattern="/myinfo")
 async def proboyx(event):
@@ -44,7 +44,7 @@ async def callback_query_handler(event):
   try:
     boy = event.sender_id
     PRO = await bot.get_entity(boy)
-    ZERO = "❀ ʏᴏᴜʀ ᴅᴇᴛᴀɪʟs ʙʏ ᴢᴇʀᴏ ᴛᴡᴏ \n"
+    ZERO = "➪ ʏᴏᴜʀ ᴅᴇᴛᴀɪʟs ʙʏ ᴇʀᴇɴ ᴊᴀᴇɢᴇʀ \n"
     ZERO += f"➻ ғɪʀsᴛ ɴᴀᴍᴇ : {PRO.first_name} \n"
     ZERO += f"➻ ʟᴀsᴛ ɴᴀᴍᴇ : {PRO.last_name}\n"
     ZERO += f"➻ ʏᴏᴜ ʙᴏᴛ? : {PRO.bot} \n"
