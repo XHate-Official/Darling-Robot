@@ -49,7 +49,7 @@ from DarlingRobot.modules.helper_funcs.chat_status import sudo_plus
 from DarlingRobot.modules.helper_funcs.extraction import extract_user
 from DarlingRobot import telethn
 
-DARLING_IMG = "https://telegra.ph/file/61e92b18199d6818a4ddc.jpg"
+DARLING_IMG = "https://telegra.ph/file/27323aa6a005c58c6c830.jpg"
 
 def no_by_per(totalhp, percentage):
     """
@@ -240,10 +240,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/Darling_Updates/5"),
+                             url="https://t.me/FoundingtitanUpdatesx/5"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/Darling_Updates/4"),
+                             url="https://t.me/FoundingtitanUpdatesx/4"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -446,7 +446,7 @@ def set_about_me(update: Update, context: CallbackContext):
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
-    status = "*╒═══「 Zero Two statistics 」*\n\n"
+    status = "*╒═══「 𝐅ᴏᴜɴᴅɪɴɢ 𝐓ɪᴛᴀɴ  𝐒ᴛᴀᴛɪsᴛɪᴄs 」*\n\n"
     status += "*➢ System Start time:* " + str(uptime) + "\n"
     uname = platform.uname()
     status += "*➢ System:* " + str(uname.system) + "\n"
@@ -467,10 +467,10 @@ def stats(update, context):
             DARLING_IMG,
             status
             + "\n*Bot statistics*:\n"
-            + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✘ Support ✘](https://t.me/Darling_Support) | [✘ Updates ✘](https://t.me/Darling_updates)\n\n"
-            + "╘══「 By [× ʜᴀᴛᴇ ×](https://t.me/x_hate) 」\n",
-            parse_mode=ParseMode.MARKDOWN,
+            + "\n".join([mod.__stats__() for mod in STATS])            
+            + f"\n\n[✘ Support ✘](https://t.me/AckermanXClan) | [✘ Updates ✘](https://t.me/FoundingtitanUpdatesx)\n\n"
+            + "╘══「 By [× 𝐙ᴇɴᴛ ×](https://t.me/xD_Zent) 」\n",
+            parse_mode=ParseMode.MARKDOWN,            
         )
     except BaseException:
         update.effective_message.reply_text(
@@ -480,9 +480,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [sᴜᴘᴘᴏʀᴛ](https://t.me/Darling_Support) | ✦ [ᴜᴘᴅᴀᴛᴇs](https://t.me/Darling_updates)\n\n"
+                    + f"\n\n✦ [sᴜᴘᴘᴏʀᴛ](https://t.me/AckermanXClan) | ✦ [ᴜᴘᴅᴀᴛᴇs](https://t.me/FoundingtitanUpdatesx)\n\n"
                 )
-                + "╘══「 by [• ʜᴀᴛᴇ •](https://t.me/x_hate) 」\n"
+                + "╘══「 by [• 𝐙ᴇɴᴛ •](https://t.me/xD_Zent) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
