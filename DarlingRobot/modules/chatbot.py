@@ -17,7 +17,7 @@ from telegram.utils.helpers import mention_html, mention_markdown, escape_markdo
 
 from DarlingRobot.modules.helper_funcs.filters import CustomFilters
 from DarlingRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from DarlingRobot import dispatcher, updater, SUPPORT_CHAT
+from DarlingRobot import dispatcher, updater, SUPPORT_CHAT, KUKI_API
 from DarlingRobot.modules.log_channel import gloggable
 
 
@@ -114,7 +114,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         Message = message.text
         bot.send_chat_action(chat_id, action="typing")
-        kukiurl = requests.get('https://www.kukiapi.xyz/api/apikey=KUKIg76Fg4EIo/Cutiepii/@Awesome_RJ/message='+Message)
+        kukiurl = requests.get('https://www.kukiapi.xyz/api/apikey={KUKI_API}/RED/@UNBEATABLERED/message='+Message)
         Kuki = json.loads(kukiurl.text)
         kuki = Kuki['reply']
         sleep(0.3)
@@ -140,7 +140,7 @@ Chatbot utilizes the Kuki's api which allows Kuki to talk and provide a more int
 *Admins only Commands*:
   ➢ `/Chatbot`*:* Shows chatbot control panel
   
-*Powered by ItelAi*
+*Powered by @Metavoid*
 """
 
 __mod_name__ = "「CHATBOT」"
